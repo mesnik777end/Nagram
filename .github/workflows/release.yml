@@ -223,7 +223,7 @@ jobs:
           name: gradle-properties
           path: gradle.properties
       - uses: actions/upload-artifact@v4
-        if: false
+      
         with:
           name: Release
           path: ${{ env.APK }}
