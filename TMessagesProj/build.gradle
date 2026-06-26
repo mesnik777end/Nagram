@@ -210,7 +210,7 @@ android {
             jniDebuggable true
             multiDexEnabled true
             zipAlignEnabled true
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
         }
 
         release {
