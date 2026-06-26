@@ -535,6 +535,6 @@ android.applicationVariants.all { variant ->
         output.versionNameOverride = "12.7.3-mod"
     }
     def mergedFlavor = variant.mergedFlavor
-    mergedFlavor.applicationId = "xyz.nextalone.nagrammy"
+    mergedFlavor.applicationId = "xyz.nextalone.nagram"
 }
 }
