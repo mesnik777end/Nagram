@@ -82,7 +82,7 @@ android {
     buildToolsVersion '35.0.0'
     ndkVersion rootProject.ext.ndkVersion // 27.2.12479018
 
-    defaultConfig.applicationId = "xyz.nextalone.nagrammy"
+    defaultConfig.applicationId = "xyz.nextalone.nagram"
 
     sourceSets {
 
@@ -530,4 +530,11 @@ sentry {
     // This is auto disabled if running against a self hosted instance of Sentry.
     // Default is enabled.
     telemetry = true
+android.applicationVariants.all { variant ->
+    variant.outputs.all { output ->
+        output.versionNameOverride = "12.7.3-mod"
+    }
+    def mergedFlavor = variant.mergedFlavor
+    mergedFlavor.applicationId = "xyz.nextalone.nagrammy"
+}
 }
